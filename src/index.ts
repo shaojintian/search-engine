@@ -4,12 +4,14 @@
 //vue
 
 import Vue from 'vue'
-import hello from './components/hello.vue'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css';
+import App from './App.vue';
 
-let app1 = new Vue({
+
+Vue.use(ElementUI)
+
+ new Vue({
     el:'.app', 
-    components:{
-        hello
-    },
-    template:`<hello/>`
+    render: h => h(App)
 })

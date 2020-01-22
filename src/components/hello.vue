@@ -25,7 +25,7 @@ export default Vue.extend({
 
 <style scoped>
 
-h1 {
+.h1 {
     color: red;
 }
 
